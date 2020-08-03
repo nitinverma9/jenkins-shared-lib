@@ -33,7 +33,7 @@ def call(body) {
                     test: {
                         sh '''
                             #!/bin/bash
-                            echo "This is Build Stage for ${ENV}"
+                            echo "This is Build Stage for ${ENV}, ${REGION}"
                            '''
                     }
                 }
