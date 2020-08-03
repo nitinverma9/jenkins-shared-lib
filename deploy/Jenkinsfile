@@ -1,5 +1,5 @@
 @Library('jenkins-shared-lib') _
 simpleSharedLibTest {
-env="test"
-region="mymacbook"
+env='test'
+region='mymacbook'
 }
