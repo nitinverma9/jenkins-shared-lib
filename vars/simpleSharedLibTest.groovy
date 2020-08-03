@@ -31,9 +31,10 @@ def call(body) {
             stage('Build Stage') {
                 steps {
                      {
-                        sh '''#!/bin/bash
+                        sh '''
+                            #!/bin/bash
                             echo "This is Build Stage for ${ENV}"
-                        '''
+                           '''
                     }
                 }
                 post {
