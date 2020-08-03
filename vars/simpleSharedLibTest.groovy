@@ -28,15 +28,13 @@ def call(body) {
                     }
                 }
             }
-            stage('Build Stage') {
+            stage('BuildStage') {
                 steps {
-                    test: {
                         sh '''
                             #!/bin/bash
                             echo "This is Build Stage for ${ENV}, ${REGION}"
                            '''
-                    }
-                }
+                      }
                 post {
                     always {
                         sh '''#!/bin/bash
