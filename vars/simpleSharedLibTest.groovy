@@ -30,7 +30,7 @@ def call(body) {
             }
             stage('Build Stage') {
                 steps {
-                     {
+                    test: {
                         sh '''
                             #!/bin/bash
                             echo "This is Build Stage for ${ENV}"
